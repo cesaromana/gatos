@@ -249,7 +249,6 @@ const StyledWrapper = styled.div`
     border-radius: 10px;
   }
 
-  /* AJUSTE: mismos estilos para .screen y .screenM */
   .screen,
   .screenM {
     width: 13em;
@@ -555,6 +554,11 @@ const StyledWrapper = styled.div`
     }
     .screen {
       display: none;
+    }
+    /* Oculta las líneas de colores en móvil */
+    .screenM:before,
+    .screenM:after {
+      display: none !important;
     }
   }
   @media only screen and (min-width: 1025px) {
