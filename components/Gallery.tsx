@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 
 const galleryImages = [
-  'https://picsum.photos/seed/kitten1/500/500',
-  'https://picsum.photos/seed/kitten2/500/500',
-  'https://picsum.photos/seed/kitten3/500/500',
-  'https://picsum.photos/seed/kitten4/500/500',
-  'https://picsum.photos/seed/kitten5/500/500',
-  'https://picsum.photos/seed/kitten6/500/500',
+  '/img/benito.jpeg',
+  '/img/mango.jpeg',
+  '/img/brando.jpeg',
+  '/img/lulu.jpeg',
 ];
 
 const GalleryImage: React.FC<{ src: string; animationDelay: string; }> = ({ src, animationDelay }) => {
