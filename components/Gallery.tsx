@@ -5,6 +5,8 @@ const galleryImages = [
   'public/img/mango.jpeg',
   'public/img/brando.jpeg',
   'public/img/lulu.jpeg',
+  'public/img/superman.jpeg',
+  'public/img/leon.jpg'
 ];
 
 const GalleryImage: React.FC<{ src: string; animationDelay: string; }> = ({ src, animationDelay }) => {
