@@ -9,7 +9,7 @@ import ChismosoScreen from './components/ChismosoScreen';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/root">
       <div className="bg-[#e8e8e8] text-[#5c5c5c] min-h-screen">
         <Header />
         <main>

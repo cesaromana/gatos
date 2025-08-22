@@ -19,5 +19,6 @@
     "@types/styled-components": "^5.1.34",
     "typescript": "~5.8.2",
     "vite": "^6.3.5"
-  }
+  },
+  "homepage": "https://cesaromana.github.io/root"
 }
