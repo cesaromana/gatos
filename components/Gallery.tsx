@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 const galleryImages = [
-  'public/img/benito.jpeg',
-  'public/img/mango.jpeg',
-  'public/img/brando.jpeg',
-  'public/img/lulu.jpeg',
-  'public/img/superman.jpeg',
-  'public/img/leon.jpg'
+  'img/benito.jpeg',
+  'img/mango.jpeg',
+  'img/brando.jpeg',
+  'img/lulu.jpeg',
+  'img/superman.jpeg',
+  'img/leon.jpg'
 ];
 
 const GalleryImage: React.FC<{ src: string; animationDelay: string; }> = ({ src, animationDelay }) => {
