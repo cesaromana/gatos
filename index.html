@@ -97,6 +97,28 @@
       box-shadow: 10px 10px 20px #b9b9b9, -10px -10px 20px #ffffff;
     }
 
+    .neumorphic-card {
+    background: #e8e8e8;
+    border-radius: 1.5rem;
+    box-shadow: 8px 8px 24px #bebebe, -8px -8px 24px #ffffff;
+    transition: box-shadow 0.2s, transform 0.2s;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .neumorphic-card:active,
+  .neumorphic-card.active {
+    box-shadow: inset 4px 4px 16px #bebebe, inset -4px -4px 16px #ffffff;
+    transform: scale(0.97);
+  }
+
+  .neumorphic-card:hover,
+  .neumorphic-card.hover {
+    box-shadow: 0 8px 32px #bebebe, 0 -8px 32px #ffffff;
+    transform: scale(1.03);
+    z-index: 2;
+  }
+
     @keyframes fadeIn {
       from {
         opacity: 0;
