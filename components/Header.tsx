@@ -32,12 +32,32 @@ const Header: React.FC = () => {
         </nav>
         
         <div className="md:hidden">
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-[#5c5c5c] focus:outline-none z-20 relative">
-            <svg className="h-6 w-6 transition-transform duration-300" style={{ transform: isMenuOpen ? 'rotate(45deg)' : 'none' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-               {isMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="text-[#5c5c5c] focus:outline-none z-20 relative"
+            aria-label="Abrir menú"
+            type="button"
+          >
+            <svg
+              className={`h-6 w-6 transition-transform duration-300 ${isMenuOpen ? 'rotate-45' : ''}`}
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              {isMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
               )}
             </svg>
           </button>
